@@ -1,0 +1,44 @@
+\documentclass[12pt]{ruthesis}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{theorem}
+\usepackage{xcolor}
+\newtheorem{proposition}{Proposition}
+
+
+\usepackage[style=nature,sorting=none]{biblatex}
+\addbibresource{report_bibliography.bib}
+
+
+\theoremheaderfont{\itshape} \theoremstyle{break}
+
+\title{The Research Project You Have Done for Your Qualification Exam}
+\ctitle{The title of this report}
+\author{Graduate Student}
+\school{Rice University}
+\degree{PhD Candidacy}
+
+\address{Houston, Texas}
+\donemonth{August} \doneyear{2021} \makeindex
+
+\begin{document}
+
+  \begin{frontmatter}
+   \pagenumbering{roman}
+   \maketitle
+   \tableofcontents
+  \end{frontmatter}
+\pagenumbering{arabic}
+
+\linespacing{1.5}
+
+\include{maintext}
+
+
+\linespacing{1}
+
+\printbibliography
+
+\end{document}
